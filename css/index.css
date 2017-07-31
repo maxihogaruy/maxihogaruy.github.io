@@ -1,0 +1,33 @@
+/***** Reset *****/
+*, *::after, *::before {
+	box-sizing: border-box;
+	margin:		0;
+	padding:	0;
+}
+
+*::after, *::before {
+	content: '';
+}
+
+
+/***** Header / Footer *****/
+header, footer {
+	position: 	fixed;
+	left: 		0;
+	right: 		0;
+	z-index: 	1000;
+	background:	white;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.4);
+}
+
+header {
+	top: 	0;
+}
+
+header > h1, nav, nav li {
+	display: inline-block;
+}
+
+footer {
+	bottom: 0;
+}
