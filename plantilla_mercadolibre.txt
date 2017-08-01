@@ -1,0 +1,40 @@
+<div  style="display: block; margin: 0 auto; padding: 0; border: 0; width: 900px; height: 2400px;">
+
+<!-- Cabecera -->
+<div>
+	<a href="http://www.maxihogar.com.uy" target="_blank">
+		<img src="http://www.maxihogar.com.uy/img/ml_maxihogar_01.jpg"
+			alt="MaxiHogar"
+			width="900px" height="249px" style="float: left;">
+	</a>
+</div>
+
+<!-- Info -->
+<div>
+	<img src="http://www.maxihogar.com.uy/img/ml_maxihogar_03.jpg"
+		alt="Lunes a viernes de 9:00 a 18:00 horas. Sábados de 9:00 a 13:00 horas. Montevideo, por calle Acevedo Diaz. Realizamos envíos por agencias interdepartamentales. Productos en su estado de origen. Consulte costo de armado. Consulte stock antes de ofertar. Garantía por defecto de fábrica."
+		width="900px" height="360px" style="float:left;">
+</div>
+
+<!-- Formas de pago -->
+<div>
+	<img src="http://www.maxihogar.com.uy/img/ml_maxihogar_04.jpg"
+		alt="Formas de pago: Aceptamos efectivo, giros por Redpagos, depósitos bancarios y tarjetas de crédito. No aceptamos permutas."
+		width="900px" height="190px" style="float:left;">
+</div>
+
+<!-- FAQ -->
+<div>
+	<img src="http://www.maxihogar.com.uy/img/ml_maxihogar_05.jpg"
+		alt="Preguntas frecuentes"
+		width="900px" height="649px" style="float:left;">
+</div>
+
+<!-- Compromiso -->
+<div>
+	<img src="http://www.maxihogar.com.uy/img/ml_maxihogar_06.jpg"
+		alt="Su compra es un compromiso. Realice todas las consultas que desee antes de comprar, estamos a sus órdenes"
+		width="900px" height="324px" style="float:left;">
+</div>
+
+</div>
