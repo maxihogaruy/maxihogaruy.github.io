@@ -16,26 +16,3 @@ body {
 
 	background: linear-gradient(45deg, #999, #fff 30%, #fff 70%, #999);
 }
-
-body.debug::before {
-	content:'Debug';
-
-	position: 	fixed;
-	bottom:		1rem;
-	right: 		1rem;
-	z-index:	5000;
-
-	font-style: monospace;
-	font-weight:bold;
-	font-size: 	30px;
-
-	color: 	#f00;
-
-	animation: titilar .6s infinite alternate;
-}
-
-/* Animaciones */
-@keyframes titilar {
-	from{ opacity: 0; }
-	to 	{ opacity: 1; }
-}

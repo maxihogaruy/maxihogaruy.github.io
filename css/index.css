@@ -24,10 +24,47 @@ header {
 	top: 	0;
 }
 
-header > h1, nav, nav li {
+header > h1, header nav, header nav li {
 	display: inline-block;
+}
+
+h1 > small {
+	display: block;
 }
 
 footer {
 	bottom: 0;
+}
+
+
+/***** Debug CSS *****/
+body.debug::before {
+	content:'Debug';
+
+	position: 	fixed;
+	bottom:		1rem;
+	right: 		1rem;
+	z-index:	5000;
+
+	font-style: monospace;
+	font-weight:bold;
+	font-size: 	30px;
+
+	color: 	#f00;
+
+	animation: titilar .6s infinite alternate;
+}
+
+.debug section {
+	min-height: 500px;
+}
+
+.debug section::before {
+	content: '#' attr(id);
+}
+
+/* Animaciones */
+@keyframes titilar {
+	from{ opacity: 0; }
+	to 	{ opacity: 1; }
 }
