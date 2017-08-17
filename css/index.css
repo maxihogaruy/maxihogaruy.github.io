@@ -95,6 +95,10 @@ body {
 	text-align: right;
 }
 
+.text-center {
+	text-align: center;
+}
+
 /* Clears */
 .row:after,
 .container:after {
@@ -214,6 +218,10 @@ section:nth-child(2n) {
 	background: var(--fondo-seccion-par);
 }
 
+section {
+	padding: 2rem 0;
+}
+
 .content {
 	max-width: 	960px;
 	width: 		94%;
@@ -255,6 +263,86 @@ input[type=submit] {
 	border: none;
 	padding: .6rem;
 	cursor: pointer;
+}
+
+b {
+	color: var(--color-principal);
+}
+
+/*** Galeria ***/
+figure {
+	display: inline-block;
+	float: 	left;
+
+	background: #fff;
+
+	width: 32%;
+	margin-right:2%;
+	margin-bottom: 2rem;
+	height: 350px;
+
+	text-align: center;
+
+	overflow: hidden;
+	cursor: 	pointer;
+
+	transition: box-shadow .4s;
+}
+
+figure:nth-child(3n) {
+	margin-right: 0;
+}
+
+figure:hover {
+	box-shadow: 10px 10px 10px 0 rgba(0,0,0,.4);
+}
+
+figure img {
+	height: 100%;
+}
+
+figcaption {
+	position: 	relative;
+	bottom:	 	150px;
+
+	width: 	80%;
+	padding:1rem;
+
+	text-align:  	left;
+	font-weight: 	bold;
+
+	color:		var(--fondo-principal);
+	background:	var(--color-principal);
+}
+
+figcaption::before {
+	font-family:"FontAwesome";
+	content: 	"\f105";
+	color: 		#FFF201;
+	float: 		right;
+	font-size:	5rem;
+
+	position: 	relative;
+	top:		-1.5rem;
+}
+
+.merca-libre {
+	color:		#2f3476;
+	background: #fff059;
+
+	font-weight: bold;
+	text-decoration: none;
+
+	padding: .3rem 1rem;
+
+	border-radius: 4px;
+	border: solid 2px #2f3476;
+}
+
+.merca-libre::before {
+	content: url("../img/icono_ml.png") ' ';
+	position: relative;
+	top: 5px;
 }
 
 /***** Debug CSS *****/
