@@ -4,53 +4,150 @@
 	<meta charset="utf-8">
 	<title>Maxihogar</title>
 
-	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<base href="../">
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 
 	<!-- Favicon -->
 </head>
-<body class="debug">
+<body class="">
 
 <header>
-	<h1>
-		Maxihogar
-		<small>Equipamientos para el hogar</small>
-	</h1>
+	<div class="row">
+		<div class="one column main-info">
+			<h1>
+				Maxihogar
+				<small>Equipamientos para el hogar</small>
+			</h1>
 
-	<nav>
-		<ul>
-			<li>
-				<a href="#home">Home</a>
-			</li>
+			<img src="img/logo_500x185.png" alt="Maxihogar - Equipamientos para el hogar">
+		</div>
 
-			<li>
-				<a href="#about">Sobre Nosotros</a>
-			</li>
+		<div class="three columns main-nav">
+			<nav>
+				<ul>
+					<li>
+						<a href="test/#home" class="actual">Inicio</a>
+					</li>
 
-			<li>
-				<a href="#offers">Ofertas</a>
-			</li>
+					<li>
+						<a href="test/#offers">Ofertas</a>
+					</li>
 
-			<li>
-				<a href="#contact">Contáctennos</a>
-			</li>
-		</ul>
-	</nav>
+					<li>
+						<a href="test/#about">Nuestra empresa</a>
+					</li>
+
+					<li>
+						<a href="test/#contact">Contáctennos</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="two columns main-info">
+			<div class="info">
+				<span class="telefono">
+					<i class="fa fa-phone" aria-hidden="true"></i> 2215-5165
+				</span>
+				<p>
+					<b>Horarios:</b> Lun. a Sáb. de 09:00 a 18:00<br>
+					Dom. de 09:00 a 12:00
+				</p>
+			</div>
+		</div>
+	</div>
+	
 </header>
 
 <main>
 
-<section id="home"></section>
+<section id="home">
+	<div class="content">
+		<h2>Bienvenidos a MaxiHogar</h2>
 
-<section id="about"></section>
+		<img src="img/test-header.jpg" style="width: 100%;">
+	</div>
+</section>
 
-<section id="offers"></section>
+<section id="offers">
+	<div class="content">
+		<h2>Ofertas del mes</h2>
+	</div>
+</section>
 
-<section id="contact"></section>
+<section id="about">
+	<div class="content">
+		<h2>Nuestra empresa</h2>
+
+		<div class="row">
+			<div class="three columns">
+				<p>
+					Texto para rellenar sobre <b>MaxiHogar</b>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada odio tempor ante blandit pharetra. Curabitur convallis placerat augue, vitae sollicitudin nulla gravida sit amet.
+				</p>		
+			</div>
+
+			<div class="three columns">
+				<p>
+					Donec finibus metus enim, sed commodo lacus eleifend sed. Sed nibh libero, pellentesque nec euismod nec, semper volutpat quam. Donec mattis lectus et libero pellentesque, non scelerisque mauris tincidunt. Nam laoreet, nunc ac mollis posuere, turpis mauris iaculis odio, ut consequat orci est vitae libero. Nam leo nibh, lacinia pretium nunc tristique, mollis finibus ipsum. Suspendisse vitae pharetra velit, ac cursus est.
+				</p>
+			</div>
+		</div>
+	
+		<div class="row"></div>
+	</div>
+</section>
+
+<section id="contact">
+	<div class="content">
+		<h2>Contacto</h2>
+
+		<div class="row">
+			<div class="three columns">
+				<form>
+					<div class="row">
+						<label class="one columns" for="nombre">
+							Nombre:
+						</label>
+						<input class="five columns" type="text" name="nombre" required>	
+					</div>
+					
+					<div class="row">
+						<label class="one columns" for="email">
+							E-mail:
+						</label>
+						<input class="five columns" type="text" name="email" required>
+					</div>
+
+					<div class="row no-gap">
+						<label class="two columns" for="consulta">
+							Su consulta:
+						</label>
+					</div>
+
+					<div class="row">
+						<textarea class="six columns" name="consulta"></textarea>
+					</div>
+
+					<div class="row">
+						<div class="two columns"></div>
+						<input class="two columns" type="submit" name="Enviar">
+					</div>
+
+				</form>
+			</div>
+
+			<div class="two columns"></div>
+		</div>
+	</div>
+</section>
 
 </main>
 
 <footer>
-	Footer
+	Copyright MaxiHogar 2017
 </footer>
 
 </body>

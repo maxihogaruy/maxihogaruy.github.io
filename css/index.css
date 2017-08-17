@@ -1,3 +1,11 @@
+/*** Variables ***/
+:root {
+	--color-principal: #24408f;
+	--fondo-principal: #fff;
+
+	--fondo-seccion-par: #ddd;
+}
+
 /***** Reset *****/
 *, *::after, *::before {
 	box-sizing: border-box;
@@ -9,6 +17,91 @@
 	content: '';
 }
 
+html { font-size: 62.5%; }
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 	 1.5rem;
+	line-height: 1.6;
+}
+
+/******************************************************************************/
+/********************************************************************* LAYOUT */
+/* Primero para móvil */
+.container {
+	position: 	relative;
+	width: 		100%;
+	padding: 	0 20px;
+	box-sizing: border-box;
+}
+
+.column,
+.columns {
+	width: 		100%;
+	float: 		left;
+	box-sizing: border-box;
+}
+
+/* Dispositivos más grandes que 400px */
+@media (min-width: 400px) {
+	.container { padding: 0 5%; }
+}
+
+/* Dispositivos más grandes que 550px */
+@media (min-width: 550px) {
+	.row 			{ margin-bottom: 1.3rem; }
+	.row:empty		{ display: none; }
+	.row:last-child,
+	.row.no-gap { margin-bottom: 0; }
+
+	/* Márgenes de las columnas */
+	.column,
+	.columns { margin-left: 2%; }
+	
+	.column:first-child,
+	.columns:first-child { margin-left: 0; }
+
+	.column:empty,
+	.columns:empty {
+		min-height: 10px;
+	}
+
+	.one.column,
+	.one.columns 	{ width: 15%; }
+	.two.columns 	{ width: 32%; }
+	.three.columns	{ width: 49%; }
+	.four.columns 	{ width: 66%; }
+	.five.columns	{ width: 83%; }
+	.six.columns 	{ width: 100%; margin-left: 0; }
+}
+
+/* Dispositivos más grandes que 1000px */
+@media (min-width: 1000px) {
+	.container { padding: 0 50px; }
+
+	/* Márgenes de las columns */
+	.column,
+	.columns { margin-left: 1.4%; }
+
+	.one.column,
+	.one.columns 	{ width: 15.5%; }
+	.two.columns 	{ width: 32.4%; }
+	.three.columns	{ width: 49.3%; }
+	.four.columns 	{ width: 66.2%; }
+	.five.columns	{ width: 83.1%; }
+}
+
+.text-right {
+	text-align: right;
+}
+
+/* Clears */
+.row:after,
+.container:after {
+	content: 	"";
+	display: 	table;
+	clear: 		both;
+}
 
 /***** Header / Footer *****/
 header, footer {
@@ -22,9 +115,19 @@ header, footer {
 
 header {
 	top: 	0;
+	border-bottom: solid 1px var(--color-principal);
 }
 
-header > h1, header nav, header nav li {
+header h1 {
+	display: none;
+}
+
+header img {
+	width: 200px;
+	margin: 1.4rem 0 0 1.4rem;
+}
+
+header nav li {
 	display: inline-block;
 }
 
@@ -32,10 +135,122 @@ h1 > small {
 	display: block;
 }
 
-footer {
-	bottom: 0;
+.telefono {
+	color: var(--color-principal);
+	font-weight: bold;
+	font-size: 2.5rem;
+	display: block;
 }
 
+.telefono i {
+	font-size: 120%;
+}
+
+/*** Navegacion ***/
+header nav {
+	width: 100%;
+	text-align: center;
+}
+
+.main-nav, .main-info {
+	display: flex;
+	height: 100px;
+}
+
+.main-nav {
+	align-items: flex-end;
+}
+
+.main-info {
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+	
+	.info {
+		text-align: right;
+		font-size: 1.2rem;
+	}
+
+nav a, nav a:link, nav a:active {
+	background: var(--fondo-principal);
+	color:	 	var(--color-principal);
+	outline: 	none;
+	text-decoration: none;
+	padding: 2rem 1.4rem .6rem 1.4rem;
+	font-weight: bold;
+	font-size: 	 1.7rem;
+	border-bottom: solid 1px var(--color-principal);
+	line-height: 1.9;
+
+	transition: background 1s, color .3s;
+}
+
+nav a:hover, nav .actual {
+	color: 		var(--fondo-principal);
+	background: var(--color-principal);
+}
+
+footer {
+	bottom: 0;
+	background: var(--color-principal);
+	color: var(--fondo-principal);
+	text-align: center;
+	height: 30px;
+}
+
+
+/*** Main ***/
+main {
+	margin: 100px 0 30px 0;
+}
+
+section:nth-child(2n) {
+	background: var(--fondo-seccion-par);
+}
+
+.content {
+	max-width: 	960px;
+	width: 		94%;
+	margin: 	0 auto;
+	padding: 	1rem 0;
+}
+
+h2 {
+	color: var(--color-principal);
+	margin-bottom: 1rem;
+}
+
+form {
+	background: var(--fondo-principal);
+	padding: 2rem;
+}
+
+input[type=text] {
+	height: 2.4rem;
+}
+
+input[type=text], textarea {
+	background: #eee;
+	transition: background 1s;
+}
+
+input[type=text]:focus, textarea:focus {
+	background: #fff;
+}
+
+textarea {
+	height: 100px;
+	padding: .3rem;
+}
+
+input[type=submit] {
+	color: var(--fondo-principal);
+	background: var(--color-principal);
+	border: none;
+	padding: .6rem;
+	cursor: pointer;
+}
 
 /***** Debug CSS *****/
 body.debug::before {
