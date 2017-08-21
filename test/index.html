@@ -12,6 +12,10 @@
 
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" href="img/favicon.png">
+
+	<!-- MAVO -->
+	<script src="https://get.mavo.io/mavo.min.js"></script>
+	<link rel="stylesheet" href="https://get.mavo.io/mavo.css">
 </head>
 <body class="">
 
@@ -69,16 +73,40 @@
 <section id="home">
 	<div class="content">
 		<h2>Bienvenidos a MaxiHogar</h2>
-
-		<img src="img/test-header.jpg" style="width: 100%;">
 	</div>
 </section>
 
 <section id="offers">
-	<div class="content">
+	<div class="content"
+		mv-app="ofertas-mh"
+		mv-storage="local"
+		mv-bar="none">
+
+		<!-- MAVO -->
+		<!--
+		<div class="mv-bar mv-ui">
+			<button class="mv-edit">Editar</button>
+			<button class="mv-save">Guardar</button>
+			<button class="mv-clear">Descartar cambios</button>
+		</div>
+		-->
+
 		<h2>Ofertas del mes</h2>
 
 		<div class="row">
+			<!--
+			<figure property="oferta" mv-multiple>
+				<a property="ml-link" target="_blank">
+					<img property="imagen"
+						 src="http://http2.mlstatic.com/lavarropas-james-lr812-8-kg-economico-maxi-hogar-D_NQ_NP_400305-MLU20857244501_082016-O.jpg"
+						 alt="" />
+					<figcaption property="descripcion"
+						mv-default="[readable(to(filename(imagen), '.'))]">
+					</figcaption>
+				</a>
+			</figure>
+			-->
+
 			<figure>
 				<a href="https://articulo.mercadolibre.com.uy/MLU-444842162-lavarropas-james-lr812-8-kg-economico-maxi-hogar-_JM" target="_blank">
 					<img src="http://http2.mlstatic.com/lavarropas-james-lr812-8-kg-economico-maxi-hogar-D_NQ_NP_400305-MLU20857244501_082016-O.jpg">
